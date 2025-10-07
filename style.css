@@ -1,0 +1,199 @@
+/* =========================
+   EILEEN - Estilo General
+   ========================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f3ef;
+  color: #4a2c2a;
+  margin: 0;
+  padding: 0;
+}
+/* ===== Barra de navegación ===== */
+
+.navbar {
+  background-color: #f7f3ef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  color: #4a2c2a;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4a2c2a;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 4px;
+}
+
+.nav-links a:hover {
+  color: #a9876b;
+  border-bottom: 2px solid #a9876b;
+}
+
+/* ===== Header ===== */
+
+header {
+  background: linear-gradient(135deg, #d1bfa7, #bfa38a);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* ===== Main Section ===== */
+
+main {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+main h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4a2c2a;
+}
+
+/* ===== Productos ===== */
+
+#productos {
+  background-color: #fefcfb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#productos h2 {
+  font-family: 'Playfair Display', serif;
+  color: #4a2c2a;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.productos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 260px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.producto h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  margin: 10px 0 5px 0;
+}
+
+.precio {
+  color: #8b4513;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* ===== Botones ===== */
+
+button.agregar-carrito {
+  background-color: #bfa38a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.agregar-carrito:hover {
+  background-color: #a9876b;
+  transform: scale(1.05);
+}
+
+/* ===== Carrito ===== */
+
+#carrito {
+  margin-top: 50px;
+  background-color: #f7f3ef;
+  padding: 25px;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#carrito h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+#carrito ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+
+footer {
+  background-color: #b8a084;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
